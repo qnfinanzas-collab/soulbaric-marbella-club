@@ -1579,7 +1579,7 @@ footer .fmeta {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 96px;
-  align-items: start;
+  align-items: stretch;
 }
 
 @media (max-width: 1000px) {
@@ -1653,6 +1653,7 @@ footer .fmeta {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--infrared);
+  font-weight: 400;
   display: block;
   margin-bottom: 12px;
 }
@@ -1671,7 +1672,7 @@ footer .fmeta {
   font-size: 14px;
   line-height: 1.7;
   color: var(--ink-soft);
-  margin-top: 0;
+  margin-top: 32px;
   margin-bottom: 28px;
   max-width: 480px;
 }
@@ -1699,6 +1700,7 @@ footer .fmeta {
 .la-cabina-number {
   font-family: var(--serif);
   font-size: 32px;
+  font-weight: 400;
   color: rgba(178, 106, 74, 0.4);
   line-height: 1.2;
 }
@@ -1728,10 +1730,11 @@ footer .fmeta {
 
 .la-cabina-closing-wrapper {
   margin-top: 120px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
 }
 
 .la-cabina-closing-divider {
@@ -1758,7 +1761,7 @@ footer .fmeta {
 
 .la-cabina-image {
   position: sticky;
-  top: 120px;
+  top: 48px;
   width: 100%;
   aspect-ratio: 4 / 5;
   overflow: hidden;
