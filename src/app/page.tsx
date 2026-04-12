@@ -224,31 +224,35 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="eg-refs">
-            <div className="eg-ref reveal" data-ref="1">
-              <div className="eg-ref-image"></div>
-              <span className="eg-ref-label">Montreux · Suiza</span>
-              <span className="eg-ref-name">Clinique La Prairie</span>
-            </div>
-            <div className="eg-ref reveal reveal-delay-1" data-ref="2">
-              <div className="eg-ref-image"></div>
-              <span className="eg-ref-label">Sylt · Alemania</span>
-              <span className="eg-ref-name">Lanserhof Sylt</span>
-            </div>
-            <div className="eg-ref reveal reveal-delay-2" data-ref="3">
-              <div className="eg-ref-image"></div>
-              <span className="eg-ref-label">Altea · España</span>
-              <span className="eg-ref-name">SHA Wellness Clinic</span>
-            </div>
-            <div className="eg-ref reveal reveal-delay-3" data-ref="4">
-              <div className="eg-ref-image"></div>
-              <span className="eg-ref-label">Himalaya · India</span>
-              <span className="eg-ref-name">Ananda in the Himalayas</span>
-            </div>
-            <div className="eg-ref reveal reveal-delay-4" data-ref="5">
-              <div className="eg-ref-image"></div>
-              <span className="eg-ref-label">Hua Hin · Tailandia</span>
-              <span className="eg-ref-name">Chiva-Som</span>
+                    <div className="eg-refs-section">
+            <span className="eg-refs-intro reveal">Y EN LA MISMA LÍNEA</span>
+            
+            <div className="eg-refs-grid">
+              <div className="eg-refs-row-top">
+                <div className="eg-ref-item reveal">
+                  <span className="eg-ref-location">MONTREUX · SUIZA</span>
+                  <span className="eg-ref-name">Clinique La Prairie</span>
+                </div>
+                <div className="eg-ref-item reveal reveal-delay-1">
+                  <span className="eg-ref-location">SYLT · ALEMANIA</span>
+                  <span className="eg-ref-name">Lanserhof Sylt</span>
+                </div>
+                <div className="eg-ref-item reveal reveal-delay-2">
+                  <span className="eg-ref-location">ALTEA · ESPAÑA</span>
+                  <span className="eg-ref-name">SHA Wellness Clinic</span>
+                </div>
+              </div>
+              
+              <div className="eg-refs-row-bottom">
+                <div className="eg-ref-item reveal reveal-delay-3">
+                  <span className="eg-ref-location">HIMALAYA · INDIA</span>
+                  <span className="eg-ref-name">Ananda in the Himalayas</span>
+                </div>
+                <div className="eg-ref-item reveal reveal-delay-4">
+                  <span className="eg-ref-location">HUA HIN · TAILANDIA</span>
+                  <span className="eg-ref-name">Chiva-Som</span>
+                </div>
+              </div>
             </div>
           </div>
 
