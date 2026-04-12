@@ -1188,25 +1188,26 @@ p {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding: 0 40px;
+  padding: 60px 0 0 0;
 }
 
 .int-closing::before,
 .int-closing::after {
   content: '';
   position: absolute;
-  width: 40px;
-  height: 1px;
+  width: 1px;
+  height: 40px;
   background: var(--infrared);
-  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .int-closing::before {
-  left: 0;
+  top: -44px;
 }
 
 .int-closing::after {
-  right: 0;
+  bottom: -44px;
 }
 
 /* ---------- POSICIONAMIENTO ---------- */
@@ -1783,3 +1784,87 @@ footer .fmeta {
   }
 }
 
+
+/* ---------- B1: Mobile H2 sizing ---------- */
+@media (max-width: 768px) {
+  h2 {
+    font-size: clamp(28px, 5vw, 40px) !important;
+    line-height: 1.15 !important;
+  }
+  
+  .hero h2 {
+    font-size: clamp(34px, 7vw, 40px);
+    line-height: 1.15;
+  }
+}
+
+/* ---------- B2: Mobile padding lateral ---------- */
+@media (max-width: 768px) {
+  .wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* ---------- B3: Mobile vertical spacing reduction ---------- */
+@media (max-width: 768px) {
+  .hero,
+  .contexto,
+  .eg-section,
+  .experience,
+  .la-cabina,
+  .integracion,
+  .oportunidad,
+  .modelo,
+  .cierre {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  
+  .posicionamiento {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+  }
+}
+
+/* ---------- B5: Text wrapping balance ---------- */
+h2,
+.int-closing,
+.la-cabina-closing,
+.oportunidad-closing,
+.modelo-closing,
+.one-liner,
+.eg-head h2,
+[class*="firma"],
+[class*="signature"] {
+  text-wrap: balance;
+}
+
+/* ---------- B6: Hide decorative vertical lines on mobile ---------- */
+@media (max-width: 768px) {
+  .la-cabina-body-primary {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+  
+  .int-closing::before,
+  .int-closing::after {
+    display: none;
+  }
+  
+  .eg-head::before {
+    display: none;
+  }
+}
+
+/* ---------- B7: Cities micro-strip mobile adjustment ---------- */
+@media (max-width: 768px) {
+  .tension .cities {
+    font-size: clamp(15px, 2vw, 16px);
+  }
+}
