@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import '../ouranos.css';
+import './ouranos.css';
 import ConsultaButton from '@/components/ConsultaButton';
 import ConsultaModal from '@/components/ConsultaModal';
 import ConsultaSection from '@/components/ConsultaSection';
