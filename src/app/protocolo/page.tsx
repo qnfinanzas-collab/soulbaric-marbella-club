@@ -7,6 +7,7 @@ import ConsultaButton from '@/components/ConsultaButton';
 import ConsultaModal from '@/components/ConsultaModal';
 import ConsultaSection from '@/components/ConsultaSection';
 
+// Force revalidation - deployed with tres-cabinas block
 export default function OuranosPage() {
   const containerRef = useRef<HTMLDivElement>(null);
 
