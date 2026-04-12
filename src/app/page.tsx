@@ -476,41 +476,73 @@ export default function Home() {
       </section>
 
       {/* MODELO SOULBARIC */}
-      <section className="modelo">
+      <section className="modelo" id="modelo-soulbaric">
         <div className="wrap">
-          <div className="head">
-            <span className="eyebrow reveal">Modelo SoulBaric</span>
+          <div className="modelo-head">
+            <span className="eyebrow modelo-eyebrow reveal">Modelo SoulBaric</span>
             <h2 className="reveal reveal-delay-1">
-              Un <em>socio estratégico</em>, no un proveedor
+              Un <em>socio estratégico</em>,<br />
+              no un proveedor.
             </h2>
+            <div className="modelo-divider reveal reveal-delay-2"></div>
+            <p className="modelo-firma reveal reveal-delay-2">
+              Lo que aportamos va más allá de una experiencia.
+            </p>
           </div>
 
           <div className="modelo-grid">
-            <div className="modelo-cell reveal">
-              <div className="dot"></div>
-              <p>Integración completa en el ecosistema wellness del resort</p>
+            <div className="modelo-item reveal">
+              <span className="modelo-number">01</span>
+              <div className="modelo-content">
+                <h3 className="modelo-title">Integración completa</h3>
+                <p className="modelo-desc">En el ecosistema wellness del resort,<br />sin fricción operativa.</p>
+              </div>
             </div>
-            <div className="modelo-cell reveal reveal-delay-1">
-              <div className="dot"></div>
-              <p>Diseño de experiencias y protocolos a medida del huésped</p>
+
+            <div className="modelo-item reveal reveal-delay-1">
+              <span className="modelo-number">02</span>
+              <div className="modelo-content">
+                <h3 className="modelo-title">Diseño a medida</h3>
+                <p className="modelo-desc">Experiencias y protocolos adaptados<br />al huésped Marbella Club.</p>
+              </div>
             </div>
-            <div className="modelo-cell reveal reveal-delay-2">
-              <div className="dot"></div>
-              <p>Formación silenciosa del equipo interno</p>
+
+            <div className="modelo-item reveal reveal-delay-2">
+              <span className="modelo-number">03</span>
+              <div className="modelo-content">
+                <h3 className="modelo-title">Formación silenciosa</h3>
+                <p className="modelo-desc">Del equipo interno, dentro del tono<br />editorial del resort.</p>
+              </div>
             </div>
-            <div className="modelo-cell reveal">
-              <div className="dot"></div>
-              <p>Acompañamiento operativo continuo</p>
+
+            <div className="modelo-item reveal">
+              <span className="modelo-number">04</span>
+              <div className="modelo-content">
+                <h3 className="modelo-title">Acompañamiento continuo</h3>
+                <p className="modelo-desc">Operativo, sin necesidad de gestión<br />adicional por parte del spa.</p>
+              </div>
             </div>
-            <div className="modelo-cell reveal reveal-delay-1">
-              <div className="dot"></div>
-              <p>Activación de la propuesta dentro del relato de Marbella Club</p>
+
+            <div className="modelo-item reveal reveal-delay-1">
+              <span className="modelo-number">05</span>
+              <div className="modelo-content">
+                <h3 className="modelo-title">Activación en el relato</h3>
+                <p className="modelo-desc">Integración de la propuesta dentro<br />del storytelling del resort.</p>
+              </div>
             </div>
-            <div className="modelo-cell reveal reveal-delay-2">
-              <div className="dot"></div>
-              <p>Presencia discreta en el posicionamiento internacional</p>
+
+            <div className="modelo-item reveal reveal-delay-2">
+              <span className="modelo-number">06</span>
+              <div className="modelo-content">
+                <h3 className="modelo-title">Presencia internacional</h3>
+                <p className="modelo-desc">Discreta, alineada con el posicionamiento<br />global de Marbella Club.</p>
+              </div>
             </div>
           </div>
+
+          <p className="modelo-closing reveal">
+            No entregamos un servicio. Activamos una categoría.
+          </p>
         </div>
       </section>
 
