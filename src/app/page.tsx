@@ -650,7 +650,7 @@ export default function Home() {
         <div className="bridge-ouranos-content">
           <div className="bridge-ouranos-separator"></div>
           <p className="bridge-ouranos-text">Hay un paso más.</p>
-          <a href="/ouranos" className="bridge-ouranos-link">Protocolo → El protocolo completo</a>
+          <a href="/experiencia" className="bridge-ouranos-link">Protocolo → El protocolo completo</a>
           <div className="bridge-ouranos-separator"></div>
         </div>
       </section>
