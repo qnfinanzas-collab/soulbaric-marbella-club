@@ -385,50 +385,47 @@ export default function Home() {
       </section>
 
 
-      {/* INTEGRACIÓN */}
-      <section className="integracion">
+      {/* INTEGRACIÓN - DISEÑADO PARA SU HUÉSPED */}
+      <section className="integracion" id="disenado-para-huesped">
         <div className="wrap">
-          <div className="head">
-            <span className="eyebrow reveal">Integración</span>
+          <div className="int-head">
+            <span className="eyebrow int-eyebrow reveal">Integración</span>
             <h2 className="reveal reveal-delay-1">
-              Diseñado para <em>su huésped</em>
+              Diseñado para el huésped<br />
+              del Marbella Club.
             </h2>
+            <div className="int-divider reveal reveal-delay-2"></div>
           </div>
 
           <div className="int-grid">
-            <div className="int-cell reveal">
-              <span className="code">01 · Travel</span>
-              <h3>
-                Jet Lag <em>Reset</em>
-              </h3>
-              <p className="desc">Recuperación inmediata tras vuelos largos. Claridad y descanso.</p>
+            <div className="int-card reveal">
+              <span className="int-number">01</span>
+              <span className="int-card-eyebrow">Travel</span>
+              <h3 className="int-card-title">Jet Lag Reset</h3>
+              <p className="int-card-desc">Recuperación inmediata tras vuelos largos. Claridad y descanso.</p>
             </div>
-            <div className="int-cell reveal reveal-delay-1">
-              <span className="code">02 · Sport</span>
-              <h3>
-                Post-Golf <em>Recovery</em>
-              </h3>
-              <p className="desc">Regeneración muscular y renovación física tras la jornada.</p>
+            <div className="int-card reveal reveal-delay-1">
+              <span className="int-number">02</span>
+              <span className="int-card-eyebrow">Sport</span>
+              <h3 className="int-card-title">Post-Golf Recovery</h3>
+              <p className="int-card-desc">Regeneración muscular y renovación física tras la jornada.</p>
             </div>
-            <div className="int-cell reveal reveal-delay-2">
-              <span className="code">03 · Rest</span>
-              <h3>
-                Sleep <em>Experience</em>
-              </h3>
-              <p className="desc">Descanso profundo y regulación natural del sueño.</p>
+            <div className="int-card reveal reveal-delay-2">
+              <span className="int-number">03</span>
+              <span className="int-card-eyebrow">Rest</span>
+              <h3 className="int-card-title">Sleep Experience</h3>
+              <p className="int-card-desc">Descanso profundo y regulación natural del sueño.</p>
             </div>
-            <div className="int-cell reveal reveal-delay-3">
-              <span className="code">04 · Performance</span>
-              <h3>
-                Executive <em>Reset</em>
-              </h3>
-              <p className="desc">Alta energía, claridad mental y rendimiento sostenido.</p>
+            <div className="int-card reveal reveal-delay-3">
+              <span className="int-number">04</span>
+              <span className="int-card-eyebrow">Performance</span>
+              <h3 className="int-card-title">Executive Reset</h3>
+              <p className="int-card-desc">Alta energía, claridad mental y rendimiento sostenido.</p>
             </div>
           </div>
 
-          <p className="micro reveal">
-            Se integra de forma natural en la estancia, sin fricción,
-            <br />
+          <p className="int-closing reveal">
+            Se integra de forma natural en la estancia, sin fricción,<br />
             como parte del estilo de vida Marbella Club.
           </p>
         </div>
