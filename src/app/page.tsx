@@ -668,8 +668,8 @@ export default function Home() {
           <div className="tres-cabinas-grid reveal reveal-delay-3">
             {/* DIAMOND */}
             <div className="cabina-item">
-              <div className="cabina-imagen placeholder">
-                [Imagen: Cabina Diamond]
+              <div className="cabina-imagen">
+                <img src="/images/cabina-diamond.jpg" alt="Cabina Diamond - SoulBaric" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '2px' }} />
               </div>
               <p className="cabina-positioning">PARA VER MÁS ALLÁ</p>
               <h3 className="cabina-nombre">Diamond</h3>
