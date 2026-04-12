@@ -1,0 +1,785 @@
+/* ========================================
+   OURANOS LANDING PAGE STYLES
+   ======================================== */
+
+:root {
+  --sand: #F5F1EC;
+  --infrared: #B26A4A;
+  --ink: #3A3430;
+  --ink-soft: #5D5652;
+  --ink-muted: #8B837A;
+  --line-soft: #E8DED5;
+  --serif: 'Cormorant Garamond', serif;
+  --sans: 'Inter', sans-serif;
+}
+
+.ouranos-page {
+  background: var(--sand);
+}
+
+.ouranos-page section {
+  background: var(--sand);
+  padding: 140px 0;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.ouranos-hero {
+  padding: 160px 0 120px 0;
+  text-align: center;
+}
+
+.ouranos-hero-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+
+.ouranos-hero-eyebrow::before {
+  content: '';
+  width: 16px;
+  height: 1px;
+  background: var(--infrared);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ouranos-hero-title {
+  font-family: var(--serif);
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin: 0 0 32px 0;
+  text-wrap: balance;
+}
+
+.ouranos-hero-subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0 0 64px 0;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ouranos-hero-signature {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink-muted);
+  margin: 0;
+  letter-spacing: 0.08em;
+}
+
+/* ========================================
+   LA TESIS SECTION
+   ======================================== */
+
+.ouranos-tesis {
+  padding: 140px 0;
+}
+
+.ouranos-tesis-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+}
+
+.ouranos-tesis-eyebrow::before {
+  background: var(--infrared);
+}
+
+.ouranos-tesis-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 28px 0 32px 0;
+  max-width: 720px;
+  text-wrap: balance;
+}
+
+.ouranos-tesis-body {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0 0 56px 0;
+  max-width: 720px;
+}
+
+.ouranos-tesis-closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 44px;
+}
+
+.ouranos-closing-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
+}
+
+.ouranos-closing-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.4vw, 22px);
+  line-height: 1.6;
+  color: var(--infrared);
+  margin: 0;
+  text-align: center;
+  text-wrap: balance;
+}
+
+/* ========================================
+   LOS TRES PILARES - HEADER
+   ======================================== */
+
+.ouranos-pilares-header {
+  padding: 140px 0;
+  text-align: center;
+}
+
+.ouranos-pilares-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+}
+
+.ouranos-pilares-eyebrow::before {
+  background: var(--infrared);
+}
+
+.ouranos-pilares-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 28px 0 32px 0;
+  text-wrap: balance;
+}
+
+.ouranos-pilares-intro {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========================================
+   PILARES (Generic + Individual)
+   ======================================== */
+
+.ouranos-pilar {
+  padding: 140px 0;
+}
+
+.ouranos-pilar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: stretch;
+}
+
+.ouranos-pilar-grid-reversed {
+  grid-template-columns: 1fr 1fr;
+}
+
+.ouranos-pilar-grid-reversed > .ouranos-pilar-left {
+  order: 1;
+}
+
+.ouranos-pilar-grid-reversed > .ouranos-pilar-right {
+  order: 0;
+}
+
+.ouranos-pilar-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.ouranos-pilar-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.ouranos-pilar-number {
+  font-family: var(--serif);
+  font-size: 40px;
+  font-weight: 400;
+  color: rgba(178, 106, 74, 0.4);
+  margin: 0 0 16px 0;
+  line-height: 1;
+}
+
+.ouranos-pilar-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+  width: fit-content;
+}
+
+.ouranos-pilar-eyebrow::before {
+  background: var(--infrared);
+}
+
+.ouranos-pilar-h3 {
+  font-family: var(--serif);
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 20px 0 28px 0;
+  max-width: 480px;
+  text-wrap: balance;
+}
+
+.ouranos-pilar-body {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0 0 24px 0;
+  max-width: 520px;
+}
+
+.ouranos-pilar-citation {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-muted);
+  font-style: italic;
+  margin: 32px 0 0 0;
+  max-width: 520px;
+}
+
+.ouranos-pilar-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #FAFAF8;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ouranos-placeholder {
+  color: var(--ink-muted);
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+  font-style: italic;
+  font-family: var(--sans);
+}
+
+/* ========================================
+   LA SINERGIA
+   ======================================== */
+
+.ouranos-sinergia {
+  padding: 140px 0;
+  text-align: center;
+}
+
+.ouranos-sinergia-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+}
+
+.ouranos-sinergia-eyebrow::before {
+  background: var(--infrared);
+}
+
+.ouranos-sinergia-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 28px 0 32px 0;
+  text-wrap: balance;
+}
+
+.ouranos-sinergia-body {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0 0 24px 0;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ouranos-sinergia-closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 56px;
+}
+
+/* ========================================
+   RE-HEALTH ALIANZA CLÍNICA
+   ======================================== */
+
+.ouranos-rehealth {
+  padding: 140px 0;
+}
+
+.ouranos-rehealth-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+}
+
+.ouranos-rehealth-eyebrow::before {
+  background: var(--infrared);
+}
+
+.ouranos-rehealth-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 28px 0 32px 0;
+  max-width: 720px;
+  text-wrap: balance;
+}
+
+.ouranos-rehealth-body {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0 0 56px 0;
+  max-width: 720px;
+}
+
+.ouranos-rehealth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: start;
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.ouranos-rehealth-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.ouranos-rehealth-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.ouranos-rehealth-doctor-name {
+  font-family: var(--serif);
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 0 0 8px 0;
+}
+
+.ouranos-rehealth-doctor-specialty {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--infrared);
+  margin: 0 0 16px 0;
+}
+
+.ouranos-rehealth-doctor-bio {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0 0 20px 0;
+}
+
+.ouranos-rehealth-doctor-award {
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  font-weight: 500;
+  margin: 0;
+}
+
+.ouranos-rehealth-clinics {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.ouranos-rehealth-clinic {
+  display: flex;
+  flex-direction: column;
+}
+
+.ouranos-rehealth-clinic h4 {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--infrared);
+  margin: 0 0 12px 0;
+  font-weight: 600;
+}
+
+.ouranos-rehealth-clinic p {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.ouranos-rehealth-closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 56px;
+  text-align: center;
+}
+
+/* ========================================
+   PARA MARBELLA CLUB
+   ======================================== */
+
+.ouranos-marbella {
+  padding: 140px 0;
+}
+
+.ouranos-marbella-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+}
+
+.ouranos-marbella-eyebrow::before {
+  background: var(--infrared);
+}
+
+.ouranos-marbella-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 28px 0 56px 0;
+  max-width: 520px;
+  text-wrap: balance;
+}
+
+.ouranos-marbella-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 96px;
+}
+
+.ouranos-marbella-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.ouranos-marbella-number {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--infrared);
+  margin: 0 0 12px 0;
+  line-height: 1;
+}
+
+.ouranos-marbella-item h4 {
+  font-family: var(--serif);
+  font-size: clamp(16px, 1.2vw, 20px);
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0 0 12px 0;
+}
+
+.ouranos-marbella-item p {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+/* ========================================
+   CIERRE
+   ======================================== */
+
+.ouranos-cierre {
+  padding: 160px 0 120px 0;
+  text-align: center;
+}
+
+.ouranos-cierre-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+}
+
+.ouranos-cierre-eyebrow::before {
+  background: var(--infrared);
+}
+
+.ouranos-cierre-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 28px 0 48px 0;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+}
+
+.ouranos-cierre-signature {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink-muted);
+  margin: 0;
+  letter-spacing: 0.08em;
+}
+
+/* ========================================
+   REVEAL ANIMATIONS
+   ======================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-1.revealed {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.6s;
+}
+
+.reveal-delay-2.revealed {
+  transition-delay: 0.6s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.8s;
+}
+
+.reveal-delay-3.revealed {
+  transition-delay: 0.8s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 1s;
+}
+
+.reveal-delay-4.revealed {
+  transition-delay: 1s;
+}
+
+/* ========================================
+   RESPONSIVE: TABLET (1000px)
+   ======================================== */
+
+@media (max-width: 1000px) {
+  .wrap {
+    padding: 0 40px;
+  }
+
+  .ouranos-pilar-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+
+  .ouranos-pilar-grid-reversed {
+    grid-template-columns: 1fr;
+  }
+
+  .ouranos-pilar-grid-reversed > .ouranos-pilar-left {
+    order: 0;
+  }
+
+  .ouranos-pilar-grid-reversed > .ouranos-pilar-right {
+    order: 1;
+  }
+
+  .ouranos-rehealth-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+
+  .ouranos-marbella-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .ouranos-marbella-item h4 {
+    font-size: 18px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE: MOBILE (768px)
+   ======================================== */
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: 0 24px;
+  }
+
+  .ouranos-page section {
+    padding: 80px 0;
+  }
+
+  .ouranos-hero {
+    padding: 120px 0 80px 0;
+  }
+
+  .ouranos-hero-title {
+    font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.15;
+    margin-bottom: 24px;
+  }
+
+  .ouranos-hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+
+  .ouranos-tesis-title,
+  .ouranos-pilares-title,
+  .ouranos-sinergia-title,
+  .ouranos-rehealth-title,
+  .ouranos-marbella-title,
+  .ouranos-cierre-title {
+    font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.15;
+  }
+
+  .ouranos-pilar-h3 {
+    font-size: clamp(20px, 4vw, 32px);
+  }
+
+  .ouranos-pilar-body {
+    font-size: 15px;
+  }
+
+  .ouranos-pilar-citation {
+    font-size: 13px;
+  }
+
+  .ouranos-pilar-number {
+    font-size: 32px;
+  }
+
+  .ouranos-marbella-grid {
+    gap: 48px;
+  }
+
+  .ouranos-marbella-item h4 {
+    font-size: 16px;
+  }
+
+  .ouranos-rehealth-doctor-name {
+    font-size: 20px;
+  }
+
+  .ouranos-tesis-body,
+  .ouranos-sinergia-body,
+  .ouranos-rehealth-body,
+  .ouranos-pilares-intro {
+    font-size: 15px;
+  }
+
+  .ouranos-closing-text,
+  .ouranos-sinergia-closing {
+    font-size: 16px;
+  }
+
+  .ouranos-cierre {
+    padding: 120px 0 80px 0;
+  }
+}
+
+/* ========================================
+   RESPONSIVE: SMALL MOBILE (640px)
+   ======================================== */
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .ouranos-hero {
+    padding: 100px 0 60px 0;
+  }
+
+  .ouranos-hero-title {
+    font-size: clamp(24px, 4vw, 32px);
+  }
+
+  .ouranos-hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .ouranos-marbella-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ouranos-pilar-image {
+    aspect-ratio: 1 / 1;
+  }
+}

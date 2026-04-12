@@ -1890,3 +1890,66 @@ h2,
     font-size: clamp(15px, 2vw, 16px);
   }
 }
+
+/* ========================================
+   BRIDGE LINK: OURANOS
+   ======================================== */
+
+.bridge-ouranos {
+  background: var(--sand);
+  padding: 120px 0;
+}
+
+.bridge-ouranos-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0 48px;
+}
+
+.bridge-ouranos-separator {
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
+}
+
+.bridge-ouranos-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+}
+
+.bridge-ouranos-link {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--infrared);
+  text-decoration: none;
+  transition: opacity 200ms ease;
+}
+
+.bridge-ouranos-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .bridge-ouranos {
+    padding: 80px 24px;
+  }
+
+  .bridge-ouranos-content {
+    padding: 0 24px;
+  }
+
+  .bridge-ouranos-text {
+    font-size: 18px;
+  }
+}
