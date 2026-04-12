@@ -1952,4 +1952,182 @@ h2,
   .bridge-ouranos-text {
     font-size: 18px;
   }
+
+  .tres-cabinas {
+    padding: 80px 24px;
+  }
+
+  .tres-cabinas-title {
+    font-size: clamp(28px, 5vw, 40px);
+    margin-bottom: 24px;
+  }
+
+  .tres-cabinas-intro {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .tres-cabinas-divider {
+    margin-bottom: 64px;
+  }
+
+  .tres-cabinas-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    margin-bottom: 80px;
+  }
+
+  .tres-cabinas-closing {
+    margin-top: 80px;
+  }
+
+  .tres-cabinas-closing-text {
+    font-size: 18px;
+  }
+}
+
+/* LAS TRES CABINAS - Desktop & Tablet */
+.tres-cabinas {
+  padding: 140px 0;
+}
+
+.tres-cabinas-eyebrow {
+  color: var(--infrared);
+  display: inline-block;
+}
+
+.tres-cabinas-eyebrow::before {
+  background: var(--infrared);
+}
+
+.tres-cabinas-title {
+  font-family: var(--serif);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 28px 0 32px 0;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.tres-cabinas-intro {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0 0 32px 0;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tres-cabinas-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
+  margin: 0 auto 96px;
+}
+
+.tres-cabinas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin-bottom: 120px;
+}
+
+.cabina-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cabina-imagen {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #fafaf8;
+  border-radius: 2px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-muted);
+  font-size: 14px;
+  text-align: center;
+  padding: 24px;
+  font-style: italic;
+  font-family: var(--sans);
+}
+
+.cabina-positioning {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--infrared);
+  margin: 0 0 12px 0;
+}
+
+.cabina-nombre {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 16px 0;
+  line-height: 1;
+}
+
+.cabina-descripcion {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0 0 24px 0;
+}
+
+.cabina-atributos {
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.cabina-atributos p {
+  margin: 0;
+}
+
+.tres-cabinas-closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.tres-cabinas-closing-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
+}
+
+.tres-cabinas-closing-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+  max-width: 720px;
+  text-wrap: balance;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1000px) {
+  .tres-cabinas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
 }
