@@ -419,7 +419,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-</section>
 
 
       {/* INTEGRACIÓN - DISEÑADO PARA SU HUÉSPED */}
@@ -546,7 +545,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-</section>
 
       {/* MODELO SOULBARIC */}
       <section className="modelo" id="modelo-soulbaric">
