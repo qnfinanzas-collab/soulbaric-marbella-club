@@ -1,34 +1,8 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import '../ouranos.css';
-import ConsultaButton from '@/components/ConsultaButton';
-import ConsultaModal from '@/components/ConsultaModal';
-import ConsultaSection from '@/components/ConsultaSection';
-
 export default function OuranosPage() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const reveals = containerRef.current?.querySelectorAll('.reveal');
-    reveals?.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div ref={containerRef} className="ouranos-page">
+    <div className="ouranos-page" style={{ padding: '40px', textAlign: 'center', background: '#f5f1ec' }}>
       {/* HERO */}
       <section className="ouranos-hero">
         <div className="wrap">
@@ -381,11 +355,8 @@ export default function OuranosPage() {
         </div>
       </section>
 
-      {/* CONSULTA PRIVADA */}
-      <ConsultaSection />
-
-      <ConsultaButton />
-      <ConsultaModal />
+      <h1>✓ PROTOCOLO OURANOS</h1>
+      <p>Página en construcción - Test de compilación</p>
     </div>
   );
 }
