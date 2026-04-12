@@ -68,7 +68,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-inner">
-          <span className="eyebrow reveal in">Deep Regeneration Experience</span>
+          <span className="eyebrow reveal in">PROPUESTA CONFIDENCIAL</span>
           <h1>
             <span className="line">
               <span className="word" style={{ animationDelay: '.1s' }}>
@@ -212,12 +212,12 @@ export default function Home() {
               <div className="eg-case-overlay"></div>
               <div className="eg-case-content">
                 <span className="eg-case-name">Palazzo Fiuggi</span>
-                <span className="eg-case-sub">Medical Wellness &amp; Longevity</span>
+                <span className="eg-case-sub">Regeneración en clave histórica</span>
                 <p className="eg-case-body">
-                  Un palacio histórico italiano reposicionado como referencia europea en medical
-                  wellness. Programas de longevidad supervisados por equipo médico, gastronomía de
-                  tres estrellas Michelin y legado arquitectónico integrados en un mismo relato de
-                  bienestar contemporáneo.
+                  Un palacio histórico italiano reposicionado como referencia europea
+                  en bienestar y longevidad. Programas de regeneración supervisados,
+                  gastronomía de tres estrellas Michelin y legado arquitectónico
+                  integrados en un mismo relato de bienestar contemporáneo.
                 </p>
                 <span className="eg-case-cta">Ver referencia →</span>
               </div>
@@ -631,9 +631,6 @@ export default function Home() {
             evolución natural.
           </p>
 
-          <p className="final reveal reveal-delay-3">
-            El futuro del wellness en el Mediterráneo se escribe ahora.
-          </p>
 
           <div className="signature-block reveal reveal-delay-4">
             <div className="sb">
@@ -652,7 +649,7 @@ export default function Home() {
         <div className="fbrand">
           Soul<em>Baric</em>
         </div>
-        <div className="fmeta">© 2024 SoulBaric · Propuesta Confidencial · Marbella Club</div>
+        <div className="fmeta">© 2026 SoulBaric · Propuesta Confidencial · Marbella Club</div>
       </footer>
     </>
   );
