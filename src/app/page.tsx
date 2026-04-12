@@ -313,7 +313,7 @@ export default function Home() {
       </section>
 
       {/* LA CABINA */}
-      <section className="la-cabina">
+            <section className="la-cabina">
         <div className="wrap">
           <div className="la-cabina-grid">
             <div className="la-cabina-left">
@@ -327,7 +327,7 @@ export default function Home() {
               </h2>
               <div className="la-cabina-divider reveal reveal-delay-2"></div>
 
-              <p className="la-cabina-body reveal reveal-delay-2">
+              <p className="la-cabina-body-primary reveal reveal-delay-2">
                 Las cámaras hiperbáricas tradicionales son aparatos clínicos concebidos para
                 protocolos médicos supervisados. SoulBaric parte de la misma base fisiológica
                 y la lleva a un territorio distinto: una nueva generación de cabinas de
@@ -340,7 +340,7 @@ export default function Home() {
                 estancia, no de un tratamiento.
               </p>
 
-              <div className="la-cabina-benefits reveal reveal-delay-3">
+              <div className="la-cabina-benefits-section reveal reveal-delay-3">
                 <span className="la-cabina-subtitle">Lo que activa en el cuerpo</span>
                 <p className="la-cabina-body-small">
                   La exposición controlada a mayor concentración de oxígeno favorece
@@ -348,18 +348,54 @@ export default function Home() {
                   literatura científica:
                 </p>
 
-                <div className="la-cabina-list">
-                  <div className="la-cabina-item">Oxigenación celular y tisular profunda</div>
-                  <div className="la-cabina-item">Recuperación muscular tras esfuerzo físico</div>
-                  <div className="la-cabina-item">Regulación de los ciclos de sueño</div>
-                  <div className="la-cabina-item">Claridad mental y reducción de fatiga</div>
-                  <div className="la-cabina-item">Equilibrio de los procesos inflamatorios naturales</div>
+                <div className="la-cabina-benefits">
+                  <div className="la-cabina-benefit">
+                    <span className="la-cabina-number">01</span>
+                    <div className="la-cabina-benefit-content">
+                      <h3 className="la-cabina-benefit-title">Oxigenación profunda</h3>
+                      <p className="la-cabina-benefit-desc">Los tejidos reciben oxígeno por encima de los niveles basales cotidianos.</p>
+                    </div>
+                  </div>
+
+                  <div className="la-cabina-benefit">
+                    <span className="la-cabina-number">02</span>
+                    <div className="la-cabina-benefit-content">
+                      <h3 className="la-cabina-benefit-title">Recuperación muscular</h3>
+                      <p className="la-cabina-benefit-desc">Tras esfuerzo físico, jet lag o jornada prolongada.</p>
+                    </div>
+                  </div>
+
+                  <div className="la-cabina-benefit">
+                    <span className="la-cabina-number">03</span>
+                    <div className="la-cabina-benefit-content">
+                      <h3 className="la-cabina-benefit-title">Regulación del sueño</h3>
+                      <p className="la-cabina-benefit-desc">Los ciclos naturales encuentran su ritmo con mayor facilidad.</p>
+                    </div>
+                  </div>
+
+                  <div className="la-cabina-benefit">
+                    <span className="la-cabina-number">04</span>
+                    <div className="la-cabina-benefit-content">
+                      <h3 className="la-cabina-benefit-title">Claridad mental</h3>
+                      <p className="la-cabina-benefit-desc">Reducción de la fatiga cognitiva y mejora de la capacidad de foco.</p>
+                    </div>
+                  </div>
+
+                  <div className="la-cabina-benefit">
+                    <span className="la-cabina-number">05</span>
+                    <div className="la-cabina-benefit-content">
+                      <h3 className="la-cabina-benefit-title">Equilibrio inflamatorio</h3>
+                      <p className="la-cabina-benefit-desc">Los procesos inflamatorios naturales del organismo se modulan.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <p className="la-cabina-closing reveal reveal-delay-4">
-                Misma ciencia. Otra experiencia.
-              </p>
+              <div className="la-cabina-closing-wrapper reveal reveal-delay-4">
+                <div className="la-cabina-closing-divider"></div>
+                <p className="la-cabina-closing">Misma ciencia. Otra experiencia.</p>
+                <div className="la-cabina-closing-divider"></div>
+              </div>
             </div>
 
             <div className="la-cabina-right">
@@ -383,6 +419,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+</section>
 
 
       {/* INTEGRACIÓN - DISEÑADO PARA SU HUÉSPED */}
@@ -441,39 +478,75 @@ export default function Home() {
       </section>
 
       {/* OPORTUNIDAD */}
-      <section className="oportunidad">
+            <section className="oportunidad">
         <div className="wrap">
-          <div className="two-col">
-            <div>
-              <span className="eyebrow reveal">Oportunidad</span>
-              <h2 className="reveal reveal-delay-1" style={{ marginTop: '24px' }}>
-                No es añadir un servicio.<br />
+          <div className="oportunidad-grid">
+            <div className="oportunidad-left">
+              <span className="eyebrow oportunidad-eyebrow reveal">Oportunidad</span>
+              <h2 className="reveal reveal-delay-1">
+                No es añadir<br />
+                un servicio.<br />
                 <em>Es elevar el estándar.</em>
               </h2>
+              <div className="oportunidad-divider reveal reveal-delay-2"></div>
+              <p className="oportunidad-firma reveal reveal-delay-2">
+                Es el siguiente paso natural, no un cambio de rumbo.
+              </p>
             </div>
-            <ul className="bullets reveal reveal-delay-2">
-              <li>
-                <span className="num">01</span>Una categoría que hoy no existe en el spa
-              </li>
-              <li>
-                <span className="num">02</span>Un motivo de elección que los demás resorts no pueden
-                ofrecer
-              </li>
-              <li>
-                <span className="num">03</span>Estancias que se extienden por decisión del huésped
-              </li>
-              <li>
-                <span className="num">04</span>Un huésped que deja de comparar Marbella Club con la
-                costa
-              </li>
-              <li>
-                <span className="num">05</span>Una conversación distinta sobre qué es wellness en el
-                Mediterráneo
-              </li>
-            </ul>
+
+            <div className="oportunidad-right">
+              <div className="oportunidad-bullets">
+                <div className="oportunidad-bullet reveal">
+                  <span className="oportunidad-number">01</span>
+                  <div className="oportunidad-bullet-content">
+                    <h3 className="oportunidad-bullet-title">Una nueva categoría</h3>
+                    <p className="oportunidad-bullet-desc">Un tipo de bienestar que hoy no forma parte del catálogo del spa.</p>
+                  </div>
+                </div>
+
+                <div className="oportunidad-bullet reveal reveal-delay-1">
+                  <span className="oportunidad-number">02</span>
+                  <div className="oportunidad-bullet-content">
+                    <h3 className="oportunidad-bullet-title">Un motivo de elección propio</h3>
+                    <p className="oportunidad-bullet-desc">Una razón para elegir Marbella Club que los demás resorts no pueden ofrecer.</p>
+                  </div>
+                </div>
+
+                <div className="oportunidad-bullet reveal reveal-delay-2">
+                  <span className="oportunidad-number">03</span>
+                  <div className="oportunidad-bullet-content">
+                    <h3 className="oportunidad-bullet-title">Estancias que se extienden</h3>
+                    <p className="oportunidad-bullet-desc">Por decisión del huésped, no por estrategia del resort.</p>
+                  </div>
+                </div>
+
+                <div className="oportunidad-bullet reveal">
+                  <span className="oportunidad-number">04</span>
+                  <div className="oportunidad-bullet-content">
+                    <h3 className="oportunidad-bullet-title">Un huésped distinto</h3>
+                    <p className="oportunidad-bullet-desc">Deja de comparar Marbella Club con el resto de la costa.</p>
+                  </div>
+                </div>
+
+                <div className="oportunidad-bullet reveal reveal-delay-1">
+                  <span className="oportunidad-number">05</span>
+                  <div className="oportunidad-bullet-content">
+                    <h3 className="oportunidad-bullet-title">Otra conversación sobre wellness</h3>
+                    <p className="oportunidad-bullet-desc">Una manera nueva de hablar de bienestar en el Mediterráneo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="oportunidad-closing-wrapper reveal reveal-delay-2">
+            <div className="oportunidad-closing-divider"></div>
+            <p className="oportunidad-closing">La oportunidad no es tecnológica. Es de posicionamiento.</p>
+            <div className="oportunidad-closing-divider"></div>
           </div>
         </div>
       </section>
+</section>
 
       {/* MODELO SOULBARIC */}
       <section className="modelo" id="modelo-soulbaric">

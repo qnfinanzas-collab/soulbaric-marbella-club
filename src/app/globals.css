@@ -748,59 +748,154 @@ p {
 /* ---------- OPORTUNIDAD ---------- */
 .oportunidad {
   background: linear-gradient(180deg, var(--sand) 0%, var(--sand-2) 100%);
+  padding: 140px 0;
 }
 
-.two-col {
+.oportunidad .wrap {
+  max-width: 1200px;
+}
+
+.oportunidad-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: clamp(40px, 6vw, 120px);
+  grid-template-columns: 40% 60%;
+  gap: 96px;
   align-items: start;
 }
 
-@media (max-width: 860px) {
-  .two-col {
+@media (max-width: 1000px) {
+  .oportunidad-grid {
     grid-template-columns: 1fr;
+    gap: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .oportunidad-grid {
     gap: 48px;
   }
 }
 
-.two-col h2 {
-  max-width: 12ch;
-}
-
-.bullets {
-  list-style: none;
+.oportunidad-left {
   display: flex;
   flex-direction: column;
-  gap: 28px;
 }
 
-.bullets li {
-  display: flex;
-  gap: 22px;
-  align-items: flex-start;
-  padding-bottom: 28px;
-  border-bottom: 1px solid var(--line-soft);
+.oportunidad-eyebrow {
+  color: var(--infrared);
+}
+
+.oportunidad-eyebrow::before {
+  background: var(--infrared);
+}
+
+.oportunidad h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.2;
+  margin-top: 24px;
+  max-width: 20ch;
+}
+
+.oportunidad h2 em {
+  font-style: italic;
+}
+
+.oportunidad-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.oportunidad-firma {
   font-family: var(--serif);
-  font-size: clamp(20px, 1.7vw, 26px);
-  color: var(--ink);
-  font-weight: 400;
-  line-height: 1.3;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--infrared);
+  line-height: 1.5;
+  max-width: 320px;
+  margin: 0;
 }
 
-.bullets li:last-child {
+.oportunidad-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.oportunidad-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.oportunidad-bullet {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(178, 106, 74, 0.1);
+}
+
+.oportunidad-bullet:last-child {
   border-bottom: none;
-  padding-bottom: 0;
 }
 
-.bullets .num {
-  font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  color: var(--ink-muted);
-  padding-top: 10px;
-  min-width: 26px;
+.oportunidad-number {
+  font-family: var(--serif);
+  font-size: 28px;
+  color: rgba(178, 106, 74, 0.4);
+  line-height: 1.2;
 }
+
+.oportunidad-bullet-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.oportunidad-bullet-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.oportunidad-bullet-desc {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: rgba(58, 55, 50, 0.7);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 440px;
+}
+
+.oportunidad-closing-wrapper {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.oportunidad-closing-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
+}
+
+.oportunidad-closing {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 26px;
+  color: var(--ink);
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 720px;
+}
+
 
 /* ---------- LA EXPERIENCIA ---------- */
 .experience {
@@ -1473,6 +1568,7 @@ footer .fmeta {
 /* ---------- LA CABINA ---------- */
 .la-cabina {
   background: var(--sand);
+  padding: 140px 0;
 }
 
 .la-cabina .wrap {
@@ -1527,13 +1623,47 @@ footer .fmeta {
   margin-bottom: 28px;
 }
 
-.la-cabina-body {
+.la-cabina-body-primary {
   font-family: var(--sans);
   font-size: clamp(15px, 1.1vw, 17px);
   line-height: 1.8;
   color: var(--ink-soft);
   margin: 0 0 24px 0;
   max-width: 520px;
+  padding-left: 24px;
+  border-left: 2px solid var(--infrared);
+}
+
+.la-cabina-body {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.1vw, 17px);
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin: 0 0 48px 0;
+  max-width: 520px;
+}
+
+.la-cabina-benefits-section {
+  margin-top: 96px;
+}
+
+.la-cabina-subtitle {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--infrared);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.la-cabina-subtitle::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
+  margin-top: 12px;
 }
 
 .la-cabina-body-small {
@@ -1541,54 +1671,84 @@ footer .fmeta {
   font-size: 14px;
   line-height: 1.7;
   color: var(--ink-soft);
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 28px;
-}
-
-.la-cabina-subtitle {
-  font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--infrared);
-  display: block;
-  margin-bottom: 12px;
+  max-width: 480px;
 }
 
 .la-cabina-benefits {
-  margin-top: 56px;
-  padding-top: 44px;
-  border-top: 1px solid var(--line-soft);
-}
-
-.la-cabina-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0;
   margin-top: 28px;
 }
 
-.la-cabina-item {
-  font-family: var(--sans);
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--ink-soft);
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--line-soft);
+.la-cabina-benefit {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(178, 106, 74, 0.1);
 }
 
-.la-cabina-item:last-child {
+.la-cabina-benefit:last-child {
   border-bottom: none;
-  padding-bottom: 0;
+}
+
+.la-cabina-number {
+  font-family: var(--serif);
+  font-size: 32px;
+  color: rgba(178, 106, 74, 0.4);
+  line-height: 1.2;
+}
+
+.la-cabina-benefit-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.la-cabina-benefit-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: regular;
+  color: var(--ink);
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.la-cabina-benefit-desc {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: rgba(58, 55, 50, 0.7);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.la-cabina-closing-wrapper {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.la-cabina-closing-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--infrared);
 }
 
 .la-cabina-closing {
-  margin-top: 64px;
   font-family: var(--serif);
   font-style: italic;
-  font-size: clamp(18px, 1.4vw, 22px);
+  font-size: 28px;
   color: var(--infrared);
-  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 520px;
 }
 
 .la-cabina-right {
@@ -1620,31 +1780,3 @@ footer .fmeta {
   }
 }
 
-
-/* ---------- CONSULTA PRIVADA ---------- */
-.consulta-button {
-  position: fixed;
-  bottom: clamp(16px, 5vw, 32px);
-  right: clamp(16px, 5vw, 32px);
-  padding: clamp(12px, 2vw, 16px) clamp(20px, 4vw, 28px);
-  font-family: var(--serif);
-  font-size: 14px;
-  color: var(--infrared);
-  border-bottom: 1px solid var(--infrared);
-  background: rgba(250, 247, 241, 0.85);
-  backdrop-filter: blur(8px);
-  border: none;
-  cursor: pointer;
-  transition: gap 0.35s;
-  z-index: 40;
-}
-
-.consulta-button:hover {
-  gap: 4px;
-}
-
-/* ---------- SELECTION ---------- */
-::selection {
-  background: var(--green-deep);
-  color: var(--sand);
-}
