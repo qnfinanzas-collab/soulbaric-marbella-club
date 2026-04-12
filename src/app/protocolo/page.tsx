@@ -1,8 +1,35 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
+import Image from 'next/image';
+import '../ouranos.css';
+import ConsultaButton from '@/components/ConsultaButton';
+import ConsultaModal from '@/components/ConsultaModal';
+import ConsultaSection from '@/components/ConsultaSection';
+
 export default function OuranosPage() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const reveals = containerRef.current?.querySelectorAll('.reveal');
+    reveals?.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="ouranos-page" style={{ padding: '40px', textAlign: 'center', background: '#f5f1ec' }}>
+    <div ref={containerRef} className="ouranos-page">
       {/* HERO */}
       <section className="ouranos-hero">
         <div className="wrap">
@@ -220,6 +247,98 @@ export default function OuranosPage() {
         </div>
       </section>
 
+      {/* LAS TRES CABINAS */}
+      <section className="tres-cabinas">
+        <div className="wrap">
+          <span className="eyebrow tres-cabinas-eyebrow reveal">LAS CABINAS</span>
+          <h2 className="tres-cabinas-title reveal reveal-delay-1">
+            Tres cabinas.
+            <br />
+            Una categoría.
+          </h2>
+          <p className="tres-cabinas-intro reveal reveal-delay-2">
+            El protocolo Ouranos se ejecuta en tres modelos de cabina diseñados
+            <br />
+            específicamente para el sector del lujo. Cada uno responde a un
+            <br />
+            escenario distinto — apertura, amplitud o intimidad. La arquitectura
+            <br />
+            del protocolo es siempre la misma. Lo que cambia es cómo se habita.
+          </p>
+          <div className="tres-cabinas-divider reveal reveal-delay-2"></div>
+
+          <div className="tres-cabinas-grid reveal reveal-delay-3">
+            {/* DIAMOND */}
+            <div className="cabina-item">
+              <div className="cabina-imagen placeholder">
+                [Imagen: Cabina Diamond]
+              </div>
+              <p className="cabina-positioning">PARA VER MÁS ALLÁ</p>
+              <h3 className="cabina-nombre">Diamond</h3>
+              <p className="cabina-descripcion">
+                La experiencia privada más abierta y luminosa en hiperoxigenación.
+                Grandes ventanas panorámicas que eliminan la sensación de
+                confinamiento y convierten cada sesión en un momento de calma,
+                luz y confort absoluto.
+              </p>
+              <div className="cabina-atributos">
+                <p>· Mono o biplaza</p>
+                <p>· Ventanales panorámicos</p>
+                <p>· Iluminación Starlight disponible</p>
+              </div>
+            </div>
+
+            {/* CLUB */}
+            <div className="cabina-item">
+              <div className="cabina-imagen placeholder">
+                [Imagen: Cabina Club]
+              </div>
+              <p className="cabina-positioning">ESPACIO PARA TODO</p>
+              <h3 className="cabina-nombre">Club</h3>
+              <p className="cabina-descripcion">
+                La experiencia más amplia y versátil. Un interior concebido para
+                acoger sesiones compartidas, reuniones privadas o estancias
+                prolongadas sin renunciar a la sofisticación estética del protocolo.
+              </p>
+              <div className="cabina-atributos">
+                <p>· Configuración ampliada</p>
+                <p>· Versatilidad de uso</p>
+                <p>· Máxima adaptabilidad</p>
+              </div>
+            </div>
+
+            {/* FORT */}
+            <div className="cabina-item">
+              <div className="cabina-imagen placeholder">
+                [Imagen: Cabina Fort]
+              </div>
+              <p className="cabina-positioning">MÁS ÍNTIMA</p>
+              <h3 className="cabina-nombre">Fort</h3>
+              <p className="cabina-descripcion">
+                La experiencia más recogida y silenciosa. Un espacio íntimo
+                diseñado para la desconexión profunda, la introspección y el
+                descanso sin distracción. Privacidad total en formato compacto.
+              </p>
+              <div className="cabina-atributos">
+                <p>· Mono o biplaza</p>
+                <p>· Máxima intimidad</p>
+                <p>· Integración arquitectónica discreta</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="tres-cabinas-closing reveal reveal-delay-4">
+            <div className="tres-cabinas-closing-divider"></div>
+            <p className="tres-cabinas-closing-text">
+              La cabina correcta depende del resort.
+              <br />
+              El protocolo es siempre el mismo.
+            </p>
+            <div className="tres-cabinas-closing-divider"></div>
+          </div>
+        </div>
+      </section>
+
       {/* RE-HEALTH ALIANZA CLÍNICA */}
       <section className="ouranos-rehealth">
         <div className="wrap">
@@ -355,8 +474,11 @@ export default function OuranosPage() {
         </div>
       </section>
 
-      <h1>✓ PROTOCOLO OURANOS</h1>
-      <p>Página en construcción - Test de compilación</p>
+      {/* CONSULTA PRIVADA */}
+      <ConsultaSection />
+
+      <ConsultaButton />
+      <ConsultaModal />
     </div>
   );
 }
