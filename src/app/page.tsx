@@ -645,12 +645,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BRIDGE LINK: OURANOS */}
+      {/* BRIDGE LINK: PROTOCOLO */}
       <section className="bridge-ouranos">
         <div className="bridge-ouranos-content">
           <div className="bridge-ouranos-separator"></div>
           <p className="bridge-ouranos-text">Hay un paso más.</p>
-          <a href="/ouranos" className="bridge-ouranos-link">Ouranos → El protocolo completo</a>
+          <a href="/protocolo" className="bridge-ouranos-link">Protocolo → El protocolo completo</a>
           <div className="bridge-ouranos-separator"></div>
         </div>
       </section>
