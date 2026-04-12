@@ -2,6 +2,7 @@
 
 // Landing page - SoulBaric x Marbella Club
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { ConsultaButton } from '@/components/ConsultaButton';
 import { ConsultaModal } from '@/components/ConsultaModal';
 import { ConsultaSection } from '@/components/ConsultaSection';
@@ -363,23 +364,19 @@ export default function Home() {
 
             <div className="la-cabina-right">
               <div className="la-cabina-image reveal reveal-delay-2">
-                {/* PLACEHOLDER: Imagen profesional de la cabina */}
-                <div style={{
-                  width: '100%',
-                  aspectRatio: '4/5',
-                  background: 'linear-gradient(135deg, #E8D5C4 0%, #D4C4B0 100%)',
-                  borderRadius: '2px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#7A766D',
-                  fontSize: '14px',
-                  textAlign: 'center',
-                  padding: '24px',
-                  fontStyle: 'italic'
-                }}>
-                  [Imagen: Cabina SoulBaric en entorno spa de lujo]
-                </div>
+                <Image
+                  src="/images/cabina.jpg"
+                  alt="Cabina SoulBaric - Deep Regeneration Experience"
+                  width={600}
+                  height={750}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    borderRadius: '2px',
+                    objectFit: 'cover'
+                  }}
+                  priority={false}
+                />
               </div>
               <p className="la-cabina-caption">Cabina SoulBaric. Diseño propietario.</p>
             </div>
