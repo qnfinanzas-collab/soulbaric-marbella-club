@@ -2124,10 +2124,53 @@ h2,
   text-wrap: balance;
 }
 
-/* Responsive: Tablet */
-@media (max-width: 1000px) {
+/* Responsive: Tablet (768px – 1023px) */
+@media (max-width: 1023px) {
   .tres-cabinas-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+
+  .cabina-item {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .cabina-imagen {
+    width: 100%;
+  }
+
+  .cabina-nombre,
+  .cabina-descripcion,
+  .cabina-atributos {
+    text-align: center;
+  }
+}
+
+/* Responsive: Mobile (<768px) */
+@media (max-width: 767px) {
+  .tres-cabinas {
+    padding: 80px 24px;
+  }
+
+  .tres-cabinas-grid {
+    grid-template-columns: 1fr;
+    gap: 64px;
+    margin-bottom: 80px;
+  }
+
+  .cabina-item {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .cabina-nombre,
+  .cabina-descripcion,
+  .cabina-atributos {
+    text-align: left;
+  }
+
+  .tres-cabinas-closing-text {
+    font-size: 18px;
   }
 }
