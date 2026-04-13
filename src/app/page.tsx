@@ -707,8 +707,8 @@ export default function Home() {
 
             {/* FORT */}
             <div className="cabina-item">
-              <div className="cabina-imagen placeholder">
-                [Imagen: Cabina Fort]
+              <div className="cabina-imagen">
+                <img src="/images/cabina-fort.jpg" alt="Cabina Fort - SoulBaric" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '2px' }} />
               </div>
               <p className="cabina-positioning">MÁS ÍNTIMA</p>
               <h3 className="cabina-nombre">Fort</h3>
